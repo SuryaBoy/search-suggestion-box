@@ -1,0 +1,21 @@
+body{
+	text-align:center;
+}
+
+
+#search{
+	
+	padding:12px 24px;
+	width:250px;
+
+}
+
+/*style for input wraper*/
+
+#wrap-ip{
+	margin-top: 100px;
+	display: inline-block;
+	/*position relative has been used to position the suggestion table below the input element using positon absolute property*/
+	position:relative;
+}
+

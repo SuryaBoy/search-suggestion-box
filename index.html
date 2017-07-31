@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search_Suggestion_box</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search suggestion box demo">
+  <meta name="keywords" content="search,suggestion,box">
+  <meta name="author" content="Surya Neupane">
+  
+  <script src="js/jquery-3.2.0.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/fuzzyset.js"></script>
+  <script type="text/javascript" src="js/sug_tbl.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/sug.css">
+   
+    
+</head>
+<body>
+	
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-12 text-center">
+        <form>
+          <!-- wrap your input by a inline-block element for better positining of search result table and make this wraping element position relative-->
+          <div id="wrap-ip">
+              <input type="text" id ="search" placeholder ="search">
+          </div>						  
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+      $(document).ready(function () {
+
+
+        // call the mk_tbl() function from your input
+      	$('#search').mk_tbl();
+
+        //make an array of strings like this the strings that will be displayed in the suggestion
+        var arr_of_str = ['apple','ball','cat','dog','elephant','fox','zebra','tiger','lion','owl','yellow','green','blue','mouse','keybord','monitor','laptop','desktop','bottle','cock','pussy cat','word','god','don','finger','master','slave','psycho','social','surya','nabin','amit','ashish','bijaya','sanjaya','ash','kicker','goal','ronaldo','messi','chester','link',
+        				'ox','jack','ground','seek','sick','shit','wow','slick','egg','flower','armor','hell','heaven','dead','alive','wisdom','knowledge',
+        				'Baby Sitter'];
+
+
+        //now pass your input id and your array of strings and maximum no of suggestions you want to show in the function suggestion()
+        //default maximum suggestion no is 3
+
+        suggestion('#search',arr_of_str,5);
+
+      });
+
+	 </script>
+
+ </body>
+ </html>

@@ -1,0 +1,28 @@
+
+
+/*style for suggestin table*/
+/*can be modified as per requirement*/
+#search-sug-table{
+	position:absolute;
+	border-style:solid;
+	border-color:#777;
+	border-width:1px;
+	background-color: #eee;
+	width:100%;
+}
+
+.sgn-tbl tbody{
+	display:block;
+}
+.sgn-tbl .sgn-row{
+	display: block;
+}
+.sgn-tbl .sgn-row:hover{
+	cursor:pointer;
+	background-color: #489FDF;
+	color:white;
+}
+
+.sgn-tbl .sgn-row .sgn-content{
+	padding-left: 10px;
+}
