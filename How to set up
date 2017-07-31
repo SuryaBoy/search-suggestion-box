@@ -1,5 +1,6 @@
 Clone the Project
 Copy sug.css, fuzzyset.js, sug_tbl.js in your project
+You also need jquery which is inside the project or you can use yours.
 link them in your project as shown below:
 
     <script src="js/jquery-3.2.0.js"></script>
