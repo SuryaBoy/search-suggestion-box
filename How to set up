@@ -4,6 +4,7 @@ You also need jquery which is inside the project or you can use yours.
 link them in your project as shown below:
 
     <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/fuzzyset.js"></script>
     <script type="text/javascript" src="js/sug_tbl.js"></script>
 
